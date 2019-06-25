@@ -42,4 +42,13 @@ public class User {
     public void setDevStatus(String devStatus) {
         this.devStatus = devStatus;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", age=" + age +
+                ", devStatus='" + devStatus + '\'' +
+                '}';
+    }
 }
