@@ -12,7 +12,7 @@ public class ComparingLambda {
 
 //        userList.sort((o1,o2) -> o1.getUsername().compareTo(o2.getUsername()));
 
-        userList.sort(Comparator.nullsFirst(Comparator.comparing(User::getDevStatus,(o1,o2) -> {
+        userList.sort(Comparator.nullsLast(Comparator.comparing(User::getDevStatus,(o1,o2) -> {
             if (o1 == null && o2 == null) {
                 return 0;
             } else if (o1 == null) {
