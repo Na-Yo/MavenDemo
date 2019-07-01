@@ -12,7 +12,9 @@ public class TestEnum {
         MaterialHandleExecutePlanExcelEnum[] values = MaterialHandleExecutePlanExcelEnum.values();
         for (MaterialHandleExecutePlanExcelEnum materialHandleExecutePlanExcelEnum : values) {
             String desc = materialHandleExecutePlanExcelEnum.toString();
-            System.out.println(desc);
+            System.out.println("desc===="+desc);
+            System.out.println("ordinal===="+materialHandleExecutePlanExcelEnum.ordinal());
+            System.out.println("name===="+materialHandleExecutePlanExcelEnum.name());
         }
     }
 
