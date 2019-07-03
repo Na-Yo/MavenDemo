@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22e8e290-8757-4fa5-8557-3af31b205d5c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestStringLength.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestEnum.java" afterPath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lambdademo/src/main/java/day0601/ComparingLambda.java" afterPath="$PROJECT_DIR$/lambdademo/src/main/java/day0601/ComparingLambda.java" />
     </list>
     <ignored path="$PROJECT_DIR$/demo01/target/" />
     <ignored path="$PROJECT_DIR$/lambdaDemo/target/" />
@@ -41,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComparingLambda.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ComparingLambda.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lambdademo/src/main/java/day0601/ComparingLambda.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="264">
+              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestStringLength.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestStringLength.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestStringLength.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            <state relative-caret-position="144">
+              <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -178,10 +177,10 @@
         <option value="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestGetC.java" />
         <option value="$PROJECT_DIR$/lambdademo/src/main/java/day0601/groupByLambda.java" />
         <option value="$PROJECT_DIR$/lambdademo/src/main/java/day0601/User.java" />
-        <option value="$PROJECT_DIR$/lambdademo/src/main/java/day0601/ComparingLambda.java" />
         <option value="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestZhanWeiFu.java" />
         <option value="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestEnum.java" />
         <option value="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestStringLength.java" />
+        <option value="$PROJECT_DIR$/lambdademo/src/main/java/day0601/ComparingLambda.java" />
       </list>
     </option>
   </component>
@@ -201,10 +200,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1681" />
-    <option name="y" value="91" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -297,8 +296,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,12 +358,49 @@
               <item name="xuzw" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="lambdademo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="lambdademo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="lambdademo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="lambdademo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="lambdademo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="day0601" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -403,7 +437,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestStringLength">
+  <component name="RunManager" selected="Application.ComparingLambda">
     <configuration name="ComparingLambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -589,10 +623,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestStringLength" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestEnum" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TestZhanWeiFu" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ComparingLambda" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ComparingLambda" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestStringLength" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestEnum" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TestZhanWeiFu" />
         <item index="4" class="java.lang.String" itemvalue="Application.TestGetC" />
       </list>
     </recent_temporary>
@@ -632,7 +666,9 @@
       <workItem from="1561535951716" duration="900000" />
       <workItem from="1561605208604" duration="2866000" />
       <workItem from="1561684317940" duration="601000" />
-      <workItem from="1561945853979" duration="203000" />
+      <workItem from="1561945853979" duration="845000" />
+      <workItem from="1562029883008" duration="606000" />
+      <workItem from="1562140145130" duration="394000" />
     </task>
     <task id="LOCAL-00001" summary="demo提交">
       <created>1560493637987</created>
@@ -655,11 +691,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561605491031</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="更新demo">
+      <created>1561946079124</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561946079124</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58875000" />
+    <option name="totallyTimeSpent" value="60517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
@@ -684,7 +727,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3097643" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23344018" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23878205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -974,23 +1017,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resourcelocale/src/main/resources/resource.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resourcelocale/src/main/resources/resource_en_US.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resourcelocale/src/main/java/MessageResourceLocale.java" />
@@ -1002,13 +1045,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resourcelocale/src/main/resources/resource_zh_CN.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resourcelocale/target/classes/config/resource/resource.properties" />
@@ -1058,9 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
           <caret line="72" column="17" lean-forward="false" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1075,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,16 +1158,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lambdademo/src/main/java/day0601/ComparingLambda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestZhanWeiFu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -1155,9 +1184,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestStringLength.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        <state relative-caret-position="144">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lambdademo/src/main/java/day0601/ComparingLambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
