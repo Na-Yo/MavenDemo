@@ -9,7 +9,8 @@ public class TestBigDecimal {
        /* BigDecimal bigDecimal1 = new BigDecimal("");
         System.out.println(bigDecimal1);*/
 
-        BigDecimal bigDecimal = new BigDecimal("100000000000000000000000.000000000000").setScale(9, BigDecimal.ROUND_HALF_UP);
+        BigDecimal bigDecimal = new BigDecimal("111111111111111111110000000000000000000000.000000000000");
+        System.out.println(bigDecimal.toString());
         System.out.println(bigDecimal.stripTrailingZeros());
         System.out.println(new BigDecimal(bigDecimal.stripTrailingZeros().toPlainString()));
     }
