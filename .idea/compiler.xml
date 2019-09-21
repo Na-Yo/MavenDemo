@@ -7,15 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo01" />
+        <module name="jxls2demo" />
         <module name="lambdademo" />
         <module name="resourcelocale" />
+        <module name="springbootdemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo01" target="1.8" />
+      <module name="jxls2demo" target="1.8" />
       <module name="lambdademo" target="1.8" />
       <module name="lambdademo (1)" target="1.8" />
       <module name="resourcelocale" target="1.8" />
+      <module name="springbootdemo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
