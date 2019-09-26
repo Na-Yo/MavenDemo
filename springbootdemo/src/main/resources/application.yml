@@ -13,7 +13,6 @@ spring:
   ########################################################
   ###DATASOURCE
   ########################################################
-
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
@@ -43,9 +42,14 @@ spring:
     view:
       prefix: /WEB-INF/jsp
       suffix: .jsp
+  redis:
+      database: 0
+      host: 127.0.0.1
+      port: 6379
 
 #公共配置与profiles选择无关 mapperLocations指的路径是src/main/resources
 mybatis:
   #typeAliasesPackage: com.xuzw.dao.entity
   mapperLocations: classpath:mapper/*.xml
+
 
