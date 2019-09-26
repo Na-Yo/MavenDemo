@@ -1,6 +1,6 @@
 package com.xuzw.test;
 
-import com.xuzw.util.MaterialHandleExecutePlanExcelEnum;
+import com.xuzw.demo.util.MaterialHandleExecutePlanExcelEnum;
 
 public class TestEnum {
 

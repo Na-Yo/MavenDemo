@@ -1,6 +1,6 @@
 package com.xuzw.test;
 
-import com.xuzw.util.JwtUtils;
+import com.xuzw.demo.util.JwtUtils;
 import io.jsonwebtoken.Claims;
 
 import java.text.SimpleDateFormat;

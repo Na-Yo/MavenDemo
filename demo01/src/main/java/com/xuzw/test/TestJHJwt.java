@@ -1,6 +1,6 @@
 package com.xuzw.test;
 
-import com.xuzw.util.JHJwtUtil;
+import com.xuzw.demo.util.JHJwtUtil;
 
 public class TestJHJwt {
     public static void main(String[] args) {

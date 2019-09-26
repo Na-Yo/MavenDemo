@@ -12,7 +12,7 @@
 =========================================================================
 */
 
-package com.xuzw.util;
+package com.xuzw.demo.util;
 
 import org.apache.http.conn.ssl.TrustStrategy;
 

@@ -1,4 +1,4 @@
-package com.xuzw.util;
+package com.xuzw.demo.util;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;

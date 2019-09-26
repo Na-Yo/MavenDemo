@@ -1,4 +1,4 @@
-package com.xuzw.util;
+package com.xuzw.demo.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;

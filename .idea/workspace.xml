@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22e8e290-8757-4fa5-8557-3af31b205d5c" name="Default" comment="">
+    <list default="true" id="22e8e290-8757-4fa5-8557-3af31b205d5c" name="Default" comment="调整jar报启动找不到jsp问题">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_1_8_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_39_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_39_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_39_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_39_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_39_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_39_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_12_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_8_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_9_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_9_RELEASE.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestEnum.java" afterPath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestHttp.java" afterPath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestHttp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestJHJwt.java" afterPath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestJHJwt.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestJwt.java" afterPath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestJwt.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jxls2demo/src/main/java/com/xuzw/controller/TestMain.java" afterPath="$PROJECT_DIR$/jxls2demo/src/main/java/com/xuzw/controller/TestMain.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/util/AnyTrustStrategy.java" afterPath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/demo/util/AnyTrustStrategy.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/util/HttpUtil.java" afterPath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/demo/util/HttpUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/util/HttpsUtil.java" afterPath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/demo/util/HttpsUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/util/JHJwtUtil.java" afterPath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/demo/util/JHJwtUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/util/JwtUtils.java" afterPath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/demo/util/JwtUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/util/MaterialHandleExecutePlanExcelEnum.java" afterPath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/demo/util/MaterialHandleExecutePlanExcelEnum.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/util/Student.java" afterPath="$PROJECT_DIR$/demo01/src/main/java/com/xuzw/demo/util/Student.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jxls2demo/src/main/java/com/xuzw/util/Jxls2Util.java" afterPath="$PROJECT_DIR$/jxls2demo/src/main/java/com/xuzw/demo/util/Jxls2Util.java" />
     </list>
     <ignored path="$PROJECT_DIR$/demo01/target/" />
     <ignored path="$PROJECT_DIR$/lambdaDemo/target/" />
@@ -21,73 +49,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="1565" column="21" lean-forward="false" selection-start-line="1565" selection-start-column="21" selection-end-line="1565" selection-end-column="21" />
-              <folding>
-                <marker date="1569088279831" expanded="true" signature="102447:102464" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="102447:102482" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="102447:102495" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="102447:102510" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="102545:105431" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="102558:105416" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="102612:102907" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="102631:102892" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="102694:102872" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="102734:102838" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="102755:102816" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="102957:103284" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="102976:103269" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="103071:103249" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="103111:103215" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="103132:103193" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="103335:103600" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="103354:103585" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="103387:103565" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="103427:103531" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="103448:103509" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="103643:103952" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="103662:103937" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="103739:103917" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="103779:103883" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="103800:103861" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104003:104359" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104022:104344" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104107:104324" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104147:104290" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104168:104268" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104394:104703" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104413:104688" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104490:104668" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104530:104634" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104551:104612" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104755:105089" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104774:105074" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104876:105054" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104916:105020" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="104937:104998" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="105137:105402" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="105156:105387" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="105189:105367" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="105229:105333" ph="..." />
-                <marker date="1569088279831" expanded="true" signature="105250:105311" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/springbootdemo/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="19" column="82" lean-forward="false" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
+            <state relative-caret-position="92">
+              <caret line="114" column="22" lean-forward="true" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -104,8 +75,8 @@
       <file leaf-file-name="SpringbootdemoApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/springbootdemo/SpringbootdemoApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="e#366#367#0" expanded="true" />
                 <element signature="e#436#437#0" expanded="true" />
@@ -117,8 +88,8 @@
       <file leaf-file-name="TestJspController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/controller/TestJspController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            <state relative-caret-position="192">
+              <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,9 +100,45 @@
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+            <state relative-caret-position="936">
+              <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/config/RedisConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="42" column="54" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/util/RedisUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisLock.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/lock/RedisLock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,18 +146,18 @@
       <file leaf-file-name="index1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/resources/META-INF/resources/WEB-INF/jsp/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="187" column="7" lean-forward="true" selection-start-line="187" selection-start-column="7" selection-end-line="187" selection-end-column="7" />
+            <state relative-caret-position="4488">
+              <caret line="187" column="7" lean-forward="false" selection-start-line="187" selection-start-column="7" selection-end-line="187" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="216">
+              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -159,8 +166,8 @@
       <file leaf-file-name="TestController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/controller/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="1488">
+              <caret line="72" column="5" lean-forward="false" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,7 +189,7 @@
         <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/resources/mapper/TestMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
               <folding>
                 <marker date="1569086093314" expanded="true" signature="290:326" ph="select 1 fro... dual" />
               </folding>
@@ -277,12 +284,18 @@
         <option value="$PROJECT_DIR$/springbootdemo/src/test/java/com/xuzw/springbootdemo/SpringbootdemoApplicationTests.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/springbootdemo/src/main/resources/mapper/TestMapper.xml" />
-        <option value="$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/controller/TestController.java" />
         <option value="$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/springbootdemo/SpringbootdemoApplication.java" />
-        <option value="$PROJECT_DIR$/springbootdemo/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/controller/TestJspController.java" />
-        <option value="$PROJECT_DIR$/springbootdemo/pom.xml" />
         <option value="$PROJECT_DIR$/springbootdemo/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/springbootdemo/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/util/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/config/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/util/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/util/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/controller/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/lock/RedisLock.java" />
+        <option value="$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/springbootdemo/pom.xml" />
       </list>
     </option>
   </component>
@@ -308,7 +321,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springbootdemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springbootdemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -409,7 +432,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -422,13 +444,110 @@
             <path>
               <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xuzw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xuzw" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="jxls2demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="jxls2demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="jxls2demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="jxls2demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="jxls2demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="jxls2demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xuzw" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -450,19 +569,23 @@
     <property name="RequestMappingsPanelOrder2" value="2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\SpringCloud\MavenDemo\springbootdemo\src\main\resources\META-INF\resources\WEB-INF\jsp" />
-      <recent name="E:\SpringCloud\MavenDemo\resourcelocale\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.xuzw.demo.dao.mapper" />
-      <recent name="com.xuzw.util" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.xuzw.demo.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SpringCloud\MavenDemo\springbootdemo\src\main\webapp" />
       <recent name="E:\SpringCloud\MavenDemo\springbootdemo\src\main\resources\static" />
       <recent name="E:\SpringCloud\MavenDemo\springbootdemo\src\main\resources\META-INF\resources\WEB-INF\jsp\wappay" />
       <recent name="E:\SpringCloud\MavenDemo\springbootdemo\src\main\resources" />
       <recent name="E:\SpringCloud\MavenDemo\demo01\src\main\java\com\xuzw\util" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xuzw.util" />
+      <recent name="com.xuzw.demo.dao.mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\SpringCloud\MavenDemo\springbootdemo\src\main\resources\META-INF\resources\WEB-INF\jsp" />
+      <recent name="E:\SpringCloud\MavenDemo\resourcelocale\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -744,7 +867,14 @@
       <workItem from="1569080087186" duration="656000" />
       <workItem from="1569080750924" duration="458000" />
       <workItem from="1569081246150" duration="2572000" />
-      <workItem from="1569084048364" duration="4309000" />
+      <workItem from="1569084048364" duration="4536000" />
+      <workItem from="1569200975045" duration="14000" />
+      <workItem from="1569241312128" duration="453000" />
+      <workItem from="1569495842847" duration="2781000" />
+      <workItem from="1569498643747" duration="3349000" />
+      <workItem from="1569504480988" duration="1107000" />
+      <workItem from="1569505776062" duration="356000" />
+      <workItem from="1569506180794" duration="3494000" />
     </task>
     <task id="LOCAL-00001" summary="demo提交">
       <created>1560493637987</created>
@@ -802,17 +932,38 @@
       <option name="project" value="LOCAL" />
       <updated>1569088312302</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="新增demo">
+      <created>1569088406389</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1569088406389</updated>
+    </task>
+    <task id="LOCAL-00010" summary="redis 实现分布式锁">
+      <created>1569502106643</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1569502106643</updated>
+    </task>
+    <task id="LOCAL-00011" summary="调整jar报启动找不到jsp问题">
+      <created>1569508977577</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1569508977577</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111602000" />
+    <option name="totallyTimeSpent" value="123383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -823,18 +974,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25341427" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.43177894" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.5595855" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41968912" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.3747841" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.5699482" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60103625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3298969" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30955994" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29438543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -923,7 +1074,9 @@
     <MESSAGE value="bigdecimal科学计数法的问题" />
     <MESSAGE value="国际化问题demo" />
     <MESSAGE value="新增demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增demo" />
+    <MESSAGE value="redis 实现分布式锁" />
+    <MESSAGE value="调整jar报启动找不到jsp问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整jar报启动找不到jsp问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -950,54 +1103,11 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="23" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="60" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo01/src/main/java/com/xuzw/util/MaterialHandleExecutePlanExcelEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestStringLength.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lambdademo/src/main/java/day0601/ComparingLambda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo01/src/main/java/com/xuzw/test/TestSimpleDateFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="2593" column="22" lean-forward="false" selection-start-line="2593" selection-start-column="22" selection-end-line="2593" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/stream/Collectors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="786">
@@ -1078,21 +1188,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo01/src/main/java/com/xuzw/util/HttpUtil.java">
+    <entry file="file://$PROJECT_DIR$/demo01/src/main/java/com/xuzw/demo/util/HttpUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo01/src/main/java/com/xuzw/util/HttpsUtil.java">
+    <entry file="file://$PROJECT_DIR$/demo01/src/main/java/com/xuzw/demo/util/HttpsUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="66" column="13" lean-forward="false" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo01/src/main/java/com/xuzw/util/AnyTrustStrategy.java">
+    <entry file="file://$PROJECT_DIR$/demo01/src/main/java/com/xuzw/demo/util/AnyTrustStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
@@ -1137,13 +1247,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lambdademo/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
       </provider>
     </entry>
     <entry file="file://E:/local_maven_repository/org/jxls/jxls-jexcel/1.0.7/jxls-jexcel-1.0.7.pom">
@@ -1175,16 +1285,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jxls2demo/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1656">
           <caret line="69" column="24" lean-forward="false" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jxls2demo/src/main/java/com/xuzw/util/Jxls2Util.java">
+    <entry file="file://$PROJECT_DIR$/jxls2demo/src/main/java/com/xuzw/demo/util/Jxls2Util.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
@@ -1234,68 +1344,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo01/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="1565" column="21" lean-forward="false" selection-start-line="1565" selection-start-column="21" selection-end-line="1565" selection-end-column="21" />
-          <folding>
-            <marker date="1569088279831" expanded="true" signature="102447:102464" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="102447:102482" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="102447:102495" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="102447:102510" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="102545:105431" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="102558:105416" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="102612:102907" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="102631:102892" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="102694:102872" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="102734:102838" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="102755:102816" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="102957:103284" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="102976:103269" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="103071:103249" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="103111:103215" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="103132:103193" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="103335:103600" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="103354:103585" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="103387:103565" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="103427:103531" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="103448:103509" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="103643:103952" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="103662:103937" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="103739:103917" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="103779:103883" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="103800:103861" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104003:104359" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104022:104344" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104107:104324" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104147:104290" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104168:104268" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104394:104703" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104413:104688" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104490:104668" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104530:104634" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104551:104612" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104755:105089" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104774:105074" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104876:105054" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104916:105020" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="104937:104998" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="105137:105402" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="105156:105387" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="105189:105367" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="105229:105333" ph="..." />
-            <marker date="1569088279831" expanded="true" signature="105250:105311" ph="..." />
-          </folding>
+        <state relative-caret-position="36840">
+          <caret line="1727" column="21" lean-forward="false" selection-start-line="1727" selection-start-column="21" selection-end-line="1727" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1318,25 +1379,18 @@
     <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/resources/mapper/TestMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
           <folding>
             <marker date="1569086093314" expanded="true" signature="290:326" ph="select 1 fro... dual" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/resources/META-INF/resources/WEB-INF/jsp/notify_url.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/resources/META-INF/resources/WEB-INF/jsp/notify_url.jsp" />
     <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/springbootdemo/SpringbootdemoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="e#366#367#0" expanded="true" />
             <element signature="e#436#437#0" expanded="true" />
@@ -1354,16 +1408,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/resources/META-INF/resources/WEB-INF/jsp/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="187" column="7" lean-forward="true" selection-start-line="187" selection-start-column="7" selection-end-line="187" selection-end-column="7" />
+        <state relative-caret-position="4488">
+          <caret line="187" column="7" lean-forward="false" selection-start-line="187" selection-start-column="7" selection-end-line="187" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/controller/TestJspController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/local_maven_repository/org/springframework/data/spring-data-redis/2.1.10.RELEASE/spring-data-redis-2.1.10.RELEASE.jar!/org/springframework/data/redis/core/RedisConnectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="103" column="23" lean-forward="false" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/controller/RedisUtil.java" />
+    <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/util/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="1488">
+          <caret line="72" column="5" lean-forward="false" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="42" column="54" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/lock/RedisLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1372,39 +1482,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        <state relative-caret-position="936">
+          <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/java/com/xuzw/demo/controller/TestJspController.java">
+    <entry file="file://$PROJECT_DIR$/springbootdemo/target/classes/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springbootdemo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="114" column="22" lean-forward="true" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="19" column="82" lean-forward="false" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootdemo/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding />
-        </state>
       </provider>
     </entry>
   </component>

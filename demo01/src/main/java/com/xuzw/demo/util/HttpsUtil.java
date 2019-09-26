@@ -12,7 +12,7 @@
 =========================================================================
 */
 
-package com.xuzw.util;
+package com.xuzw.demo.util;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

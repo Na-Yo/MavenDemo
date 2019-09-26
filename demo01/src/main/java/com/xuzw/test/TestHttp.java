@@ -1,6 +1,6 @@
 package com.xuzw.test;
 
-import com.xuzw.util.HttpUtil;
+import com.xuzw.demo.util.HttpUtil;
 
 import java.util.HashMap;
 

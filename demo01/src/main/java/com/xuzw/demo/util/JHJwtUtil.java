@@ -1,4 +1,4 @@
-package com.xuzw.util;
+package com.xuzw.demo.util;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Calendar;
@@ -7,7 +7,6 @@ import java.util.Date;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
-import com.auth0.jwt.interfaces.Claim;
 
 public class JHJwtUtil
 {

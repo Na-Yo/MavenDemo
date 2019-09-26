@@ -1,4 +1,4 @@
-package com.xuzw.util;
+package com.xuzw.demo.util;
 
 public class Student {
     private Long id;
