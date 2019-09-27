@@ -1,11 +1,10 @@
 package com.xuzw.demo.controller;
 
 import com.xuzw.demo.dao.mapper.TestMapper;
-import com.xuzw.demo.lock.RedisLock;
+import com.xuzw.demo.redislock.RedisLock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

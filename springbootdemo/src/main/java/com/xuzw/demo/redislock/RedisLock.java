@@ -1,4 +1,4 @@
-package com.xuzw.demo.lock;
+package com.xuzw.demo.redislock;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.connection.RedisConnection;
@@ -7,7 +7,6 @@ import org.springframework.data.redis.connection.RedisStringCommands;
 import org.springframework.data.redis.connection.ReturnType;
 import org.springframework.data.redis.core.RedisConnectionUtils;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.types.Expiration;
 import org.springframework.stereotype.Component;
 
@@ -18,8 +17,15 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class RedisLock {
 
-    @Autowired
+
     private RedisTemplate redisTemplate;
+
+    @Autowired
+    public RedisLock(RedisTemplate redisTemplate) {
+        this.redisTemplate=redisTemplate;
+    }
+
+
 
     /**
      * 解锁脚本，原子操作
