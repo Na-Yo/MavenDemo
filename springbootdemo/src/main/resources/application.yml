@@ -33,11 +33,16 @@ spring:
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
       useGlobalDataSourceStat: true
       #数据库连接地址
-      url: jdbc:mysql://180.167.245.106:13306/shdq_dev?useUnicode=true&allowMultiQueries=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+#      url: jdbc:mysql://180.167.245.106:13306/shdq_dev?useUnicode=true&allowMultiQueries=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
       #用户名
-      username: shdq
+#      username: shdq
       #密码
-      password: shdq_dev
+#     password: shdq_dev
+      url: jdbc:mysql://103.24.116.110:53306/cpic_test?useUnicode=true&allowMultiQueries=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      #用户名
+      username: tpy_dev
+      #密码
+      password: tpy#20!8
   mvc:
     view:
       prefix: /WEB-INF/jsp
