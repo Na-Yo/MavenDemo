@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xuzw.demo.dao.mapper.ext.BidCongerenceTopicExtMapper">
+
+    <select id="statisticalAnalysis" resultMap="com.xuzw.demo.dao.mapper.BidCongerenceIdeaMapper.BaseResultMap">
+        SELECT * FROM bid_congerence_idea bci
+        INNER JOIN (
+          select
+          id bctId
+          from
+          bid_congerence_topic bct
+          where bct.conference_id=#{conferenceId} and bct.topic_type='10' and bct.is_deleted='0'
+        ) bct on bci.topic_id=bct.bctId
+        where conference_id=#{conferenceId}
+    </select>
+
+
+</mapper>
