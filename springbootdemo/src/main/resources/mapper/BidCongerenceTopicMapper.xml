@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xuzw.demo.dao.mapper.BidCongerenceTopicMapper">
+  <resultMap id="BaseResultMap" type="com.xuzw.demo.dao.entity.BidCongerenceTopic">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="conference_id" jdbcType="BIGINT" property="conferenceId" />
+    <result column="topic_item" jdbcType="VARCHAR" property="topicItem" />
+    <result column="topic_type" jdbcType="VARCHAR" property="topicType" />
+    <result column="topic_name" jdbcType="VARCHAR" property="topicName" />
+    <result column="is_deleted" jdbcType="VARCHAR" property="isDeleted" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="create_user_id" jdbcType="BIGINT" property="createUserId" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="update_user_id" jdbcType="BIGINT" property="updateUserId" />
+    <result column="topic_collect" jdbcType="VARCHAR" property="topicCollect" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, conference_id, topic_item, topic_type, topic_name, is_deleted, create_time, create_user_id, 
+    update_time, update_user_id, topic_collect
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from bid_congerence_topic
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bid_congerence_topic
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xuzw.demo.dao.entity.BidCongerenceTopic">
+    insert into bid_congerence_topic (id, conference_id, topic_item, 
+      topic_type, topic_name, is_deleted, 
+      create_time, create_user_id, update_time, 
+      update_user_id, topic_collect)
+    values (#{id,jdbcType=BIGINT}, #{conferenceId,jdbcType=BIGINT}, #{topicItem,jdbcType=VARCHAR}, 
+      #{topicType,jdbcType=VARCHAR}, #{topicName,jdbcType=VARCHAR}, #{isDeleted,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{createUserId,jdbcType=BIGINT}, #{updateTime,jdbcType=TIMESTAMP}, 
+      #{updateUserId,jdbcType=BIGINT}, #{topicCollect,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xuzw.demo.dao.entity.BidCongerenceTopic">
+    insert into bid_congerence_topic
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="conferenceId != null">
+        conference_id,
+      </if>
+      <if test="topicItem != null">
+        topic_item,
+      </if>
+      <if test="topicType != null">
+        topic_type,
+      </if>
+      <if test="topicName != null">
+        topic_name,
+      </if>
+      <if test="isDeleted != null">
+        is_deleted,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="createUserId != null">
+        create_user_id,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="updateUserId != null">
+        update_user_id,
+      </if>
+      <if test="topicCollect != null">
+        topic_collect,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="conferenceId != null">
+        #{conferenceId,jdbcType=BIGINT},
+      </if>
+      <if test="topicItem != null">
+        #{topicItem,jdbcType=VARCHAR},
+      </if>
+      <if test="topicType != null">
+        #{topicType,jdbcType=VARCHAR},
+      </if>
+      <if test="topicName != null">
+        #{topicName,jdbcType=VARCHAR},
+      </if>
+      <if test="isDeleted != null">
+        #{isDeleted,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUserId != null">
+        #{createUserId,jdbcType=BIGINT},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUserId != null">
+        #{updateUserId,jdbcType=BIGINT},
+      </if>
+      <if test="topicCollect != null">
+        #{topicCollect,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xuzw.demo.dao.entity.BidCongerenceTopic">
+    update bid_congerence_topic
+    <set>
+      <if test="conferenceId != null">
+        conference_id = #{conferenceId,jdbcType=BIGINT},
+      </if>
+      <if test="topicItem != null">
+        topic_item = #{topicItem,jdbcType=VARCHAR},
+      </if>
+      <if test="topicType != null">
+        topic_type = #{topicType,jdbcType=VARCHAR},
+      </if>
+      <if test="topicName != null">
+        topic_name = #{topicName,jdbcType=VARCHAR},
+      </if>
+      <if test="isDeleted != null">
+        is_deleted = #{isDeleted,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUserId != null">
+        create_user_id = #{createUserId,jdbcType=BIGINT},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUserId != null">
+        update_user_id = #{updateUserId,jdbcType=BIGINT},
+      </if>
+      <if test="topicCollect != null">
+        topic_collect = #{topicCollect,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xuzw.demo.dao.entity.BidCongerenceTopic">
+    update bid_congerence_topic
+    set conference_id = #{conferenceId,jdbcType=BIGINT},
+      topic_item = #{topicItem,jdbcType=VARCHAR},
+      topic_type = #{topicType,jdbcType=VARCHAR},
+      topic_name = #{topicName,jdbcType=VARCHAR},
+      is_deleted = #{isDeleted,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      create_user_id = #{createUserId,jdbcType=BIGINT},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      update_user_id = #{updateUserId,jdbcType=BIGINT},
+      topic_collect = #{topicCollect,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

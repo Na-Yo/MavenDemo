@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xuzw.demo.dao.mapper.BidConferenceMapper">
+  <resultMap id="BaseResultMap" type="com.xuzw.demo.dao.entity.BidConference">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="conference_name" jdbcType="VARCHAR" property="conferenceName" />
+    <result column="conference_begin_time" jdbcType="TIMESTAMP" property="conferenceBeginTime" />
+    <result column="conference_end_time" jdbcType="TIMESTAMP" property="conferenceEndTime" />
+    <result column="conference_type" jdbcType="VARCHAR" property="conferenceType" />
+    <result column="resolution_rule" jdbcType="VARCHAR" property="resolutionRule" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="conference_outline" jdbcType="VARCHAR" property="conferenceOutline" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="create_user_id" jdbcType="BIGINT" property="createUserId" />
+    <result column="update_user_id" jdbcType="BIGINT" property="updateUserId" />
+    <result column="is_deleted" jdbcType="VARCHAR" property="isDeleted" />
+    <result column="conference_file_Id" jdbcType="VARCHAR" property="conferenceFileId" />
+    <result column="summary_file_id" jdbcType="VARCHAR" property="summaryFileId" />
+    <result column="confenerce_status" jdbcType="VARCHAR" property="confenerceStatus" />
+    <result column="topic_flag" jdbcType="VARCHAR" property="topicFlag" />
+    <result column="push_user_id" jdbcType="BIGINT" property="pushUserId" />
+    <result column="topic_remark" jdbcType="VARCHAR" property="topicRemark" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, conference_name, conference_begin_time, conference_end_time, conference_type, 
+    resolution_rule, remark, conference_outline, create_time, update_time, create_user_id, 
+    update_user_id, is_deleted, conference_file_Id, summary_file_id, confenerce_status, 
+    topic_flag, push_user_id, topic_remark
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from bid_conference
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bid_conference
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xuzw.demo.dao.entity.BidConference">
+    insert into bid_conference (id, conference_name, conference_begin_time, 
+      conference_end_time, conference_type, resolution_rule, 
+      remark, conference_outline, create_time, 
+      update_time, create_user_id, update_user_id, 
+      is_deleted, conference_file_Id, summary_file_id, 
+      confenerce_status, topic_flag, push_user_id, 
+      topic_remark)
+    values (#{id,jdbcType=BIGINT}, #{conferenceName,jdbcType=VARCHAR}, #{conferenceBeginTime,jdbcType=TIMESTAMP}, 
+      #{conferenceEndTime,jdbcType=TIMESTAMP}, #{conferenceType,jdbcType=VARCHAR}, #{resolutionRule,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=VARCHAR}, #{conferenceOutline,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{createUserId,jdbcType=BIGINT}, #{updateUserId,jdbcType=BIGINT}, 
+      #{isDeleted,jdbcType=VARCHAR}, #{conferenceFileId,jdbcType=VARCHAR}, #{summaryFileId,jdbcType=VARCHAR}, 
+      #{confenerceStatus,jdbcType=VARCHAR}, #{topicFlag,jdbcType=VARCHAR}, #{pushUserId,jdbcType=BIGINT}, 
+      #{topicRemark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xuzw.demo.dao.entity.BidConference">
+    insert into bid_conference
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="conferenceName != null">
+        conference_name,
+      </if>
+      <if test="conferenceBeginTime != null">
+        conference_begin_time,
+      </if>
+      <if test="conferenceEndTime != null">
+        conference_end_time,
+      </if>
+      <if test="conferenceType != null">
+        conference_type,
+      </if>
+      <if test="resolutionRule != null">
+        resolution_rule,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+      <if test="conferenceOutline != null">
+        conference_outline,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="createUserId != null">
+        create_user_id,
+      </if>
+      <if test="updateUserId != null">
+        update_user_id,
+      </if>
+      <if test="isDeleted != null">
+        is_deleted,
+      </if>
+      <if test="conferenceFileId != null">
+        conference_file_Id,
+      </if>
+      <if test="summaryFileId != null">
+        summary_file_id,
+      </if>
+      <if test="confenerceStatus != null">
+        confenerce_status,
+      </if>
+      <if test="topicFlag != null">
+        topic_flag,
+      </if>
+      <if test="pushUserId != null">
+        push_user_id,
+      </if>
+      <if test="topicRemark != null">
+        topic_remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="conferenceName != null">
+        #{conferenceName,jdbcType=VARCHAR},
+      </if>
+      <if test="conferenceBeginTime != null">
+        #{conferenceBeginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="conferenceEndTime != null">
+        #{conferenceEndTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="conferenceType != null">
+        #{conferenceType,jdbcType=VARCHAR},
+      </if>
+      <if test="resolutionRule != null">
+        #{resolutionRule,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="conferenceOutline != null">
+        #{conferenceOutline,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUserId != null">
+        #{createUserId,jdbcType=BIGINT},
+      </if>
+      <if test="updateUserId != null">
+        #{updateUserId,jdbcType=BIGINT},
+      </if>
+      <if test="isDeleted != null">
+        #{isDeleted,jdbcType=VARCHAR},
+      </if>
+      <if test="conferenceFileId != null">
+        #{conferenceFileId,jdbcType=VARCHAR},
+      </if>
+      <if test="summaryFileId != null">
+        #{summaryFileId,jdbcType=VARCHAR},
+      </if>
+      <if test="confenerceStatus != null">
+        #{confenerceStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="topicFlag != null">
+        #{topicFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="pushUserId != null">
+        #{pushUserId,jdbcType=BIGINT},
+      </if>
+      <if test="topicRemark != null">
+        #{topicRemark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xuzw.demo.dao.entity.BidConference">
+    update bid_conference
+    <set>
+      <if test="conferenceName != null">
+        conference_name = #{conferenceName,jdbcType=VARCHAR},
+      </if>
+      <if test="conferenceBeginTime != null">
+        conference_begin_time = #{conferenceBeginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="conferenceEndTime != null">
+        conference_end_time = #{conferenceEndTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="conferenceType != null">
+        conference_type = #{conferenceType,jdbcType=VARCHAR},
+      </if>
+      <if test="resolutionRule != null">
+        resolution_rule = #{resolutionRule,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="conferenceOutline != null">
+        conference_outline = #{conferenceOutline,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUserId != null">
+        create_user_id = #{createUserId,jdbcType=BIGINT},
+      </if>
+      <if test="updateUserId != null">
+        update_user_id = #{updateUserId,jdbcType=BIGINT},
+      </if>
+      <if test="isDeleted != null">
+        is_deleted = #{isDeleted,jdbcType=VARCHAR},
+      </if>
+      <if test="conferenceFileId != null">
+        conference_file_Id = #{conferenceFileId,jdbcType=VARCHAR},
+      </if>
+      <if test="summaryFileId != null">
+        summary_file_id = #{summaryFileId,jdbcType=VARCHAR},
+      </if>
+      <if test="confenerceStatus != null">
+        confenerce_status = #{confenerceStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="topicFlag != null">
+        topic_flag = #{topicFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="pushUserId != null">
+        push_user_id = #{pushUserId,jdbcType=BIGINT},
+      </if>
+      <if test="topicRemark != null">
+        topic_remark = #{topicRemark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xuzw.demo.dao.entity.BidConference">
+    update bid_conference
+    set conference_name = #{conferenceName,jdbcType=VARCHAR},
+      conference_begin_time = #{conferenceBeginTime,jdbcType=TIMESTAMP},
+      conference_end_time = #{conferenceEndTime,jdbcType=TIMESTAMP},
+      conference_type = #{conferenceType,jdbcType=VARCHAR},
+      resolution_rule = #{resolutionRule,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR},
+      conference_outline = #{conferenceOutline,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      create_user_id = #{createUserId,jdbcType=BIGINT},
+      update_user_id = #{updateUserId,jdbcType=BIGINT},
+      is_deleted = #{isDeleted,jdbcType=VARCHAR},
+      conference_file_Id = #{conferenceFileId,jdbcType=VARCHAR},
+      summary_file_id = #{summaryFileId,jdbcType=VARCHAR},
+      confenerce_status = #{confenerceStatus,jdbcType=VARCHAR},
+      topic_flag = #{topicFlag,jdbcType=VARCHAR},
+      push_user_id = #{pushUserId,jdbcType=BIGINT},
+      topic_remark = #{topicRemark,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
