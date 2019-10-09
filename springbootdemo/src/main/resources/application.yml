@@ -62,9 +62,13 @@ spring:
 mybatis:
   #typeAliasesPackage: com.xuzw.dao.entity
   mapperLocations: classpath:mapper/**/*.xml
+logging:
+  level:
+    com.xuzw:
+      debug
   #开启sql日志打印
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  configuration:
+#  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 
 
