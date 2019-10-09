@@ -1,18 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xuzw.demo.dao.mapper.ext.BidCongerenceTopicExtMapper">
+    <resultMap id="BidCongerenceIdeaModel_BaseResultMap" type="com.xuzw.demo.dao.entity.BidCongerenceIdeaModel">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="conference_id" jdbcType="BIGINT" property="conferenceId" />
+        <result column="topic_id" jdbcType="BIGINT" property="topicId" />
+        <result column="conferee_id" jdbcType="BIGINT" property="confereeId" />
+        <result column="topic_evaluate" jdbcType="VARCHAR" property="topicEvaluate" />
+        <result column="definite_idea" jdbcType="VARCHAR" property="definiteIdea" />
+        <result column="user_id" jdbcType="BIGINT" property="userId" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="create_user_id" jdbcType="BIGINT" property="createUserId" />
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+        <result column="update_user_id" jdbcType="BIGINT" property="updateUserId" />
+        <result column="is_deleted" jdbcType="VARCHAR" property="isDeleted" />
+        <result column="topic_type" jdbcType="VARCHAR" property="topicType" />
+        <result column="true_name" jdbcType="VARCHAR" property="trueName" />
+    </resultMap>
 
-    <select id="statisticalAnalysis" resultMap="com.xuzw.demo.dao.mapper.BidCongerenceIdeaMapper.BaseResultMap">
-        SELECT * FROM bid_congerence_idea bci
+    <select id="statisticalAnalysis" resultMap="BidCongerenceIdeaModel_BaseResultMap">
+        SELECT bci.*,bct.topic_type,su.true_name FROM bid_congerence_idea bci
         INNER JOIN (
           select
-          id bctId
+          id,
+          topic_type
           from
           bid_congerence_topic bct
-          where bct.conference_id=#{conferenceId} and bct.topic_type='10' and bct.is_deleted='0'
-        ) bct on bci.topic_id=bct.bctId
+          where bct.conference_id=#{conferenceId} and bct.is_deleted='0'
+        ) bct on bci.topic_id=bct.id
+        left join (select su.id,su.true_name from sys_user su where su.is_deleted='0') su on su.id=bci.user_id
         where conference_id=#{conferenceId}
     </select>
 
+    <select id="queryBidCongerenceTopicByConferenceId" resultMap="com.xuzw.demo.dao.mapper.BidCongerenceTopicMapper.BaseResultMap">
+        select * from bid_congerence_topic where is_deleted='0' and conference_id=#{conferenceId}
+    </select>
+
+    <resultMap id="BidCongerenceConfereeModel_BaseResultMap" type="com.xuzw.demo.dao.entity.BidCongerenceConfereeModel">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="conference_id" jdbcType="BIGINT" property="conferenceId" />
+        <result column="company_code" jdbcType="VARCHAR" property="companyCode" />
+        <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+        <result column="group_director" jdbcType="VARCHAR" property="groupDirector" />
+        <result column="leader_user_id" jdbcType="BIGINT" property="leaderUserId" />
+        <result column="secretary_user_id" jdbcType="BIGINT" property="secretaryUserId" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="create_user_id" jdbcType="BIGINT" property="createUserId" />
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+        <result column="update_user_id" jdbcType="BIGINT" property="updateUserId" />
+        <result column="is_deleted" jdbcType="VARCHAR" property="isDeleted" />
+        <result column="true_name" jdbcType="VARCHAR" property="trueName" />
+    </resultMap>
+
+    <select id="queryBidCongerenceConfereeList" resultMap="BidCongerenceConfereeModel_BaseResultMap">
+        select bcc.*,su.true_name from bid_congerence_conferee bcc
+        left join (select su.id,su.true_name from sys_user su where su.is_deleted='0') su on su.id=bcc.leader_user_id
+        where bcc.is_deleted='0' and bcc.conference_id=#{conferenceId}
+    </select>
+
+    <select id="queryBidConferenceList" resultMap="com.xuzw.demo.dao.mapper.BidConferenceMapper.BaseResultMap">
+        select bc.* from bid_conference bc
+        INNER join (select bcc.leader_user_id,bcc.conference_id from bid_congerence_conferee bcc) bcc on bcc.conference_id=bc.id
+        where is_deleted='0'
+        <if test="userId !=null and userId !=''">
+            and bcc.leader_user_id=#{userId}
+        </if>
+        <if test="createUserId !=null and createUserId !=''">
+            and bc.create_user_id=#{createUserId}
+        </if>
+    </select>
 
 </mapper>

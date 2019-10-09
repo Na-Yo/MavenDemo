@@ -16,7 +16,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
-      driver-class-name: com.mysql.jdbc.Driver
+      driver-class-name: com.mysql.cj.jdbc.Driver
       initialSize: 5
       minIdle: 5
       maxActive: 20
@@ -62,5 +62,9 @@ spring:
 mybatis:
   #typeAliasesPackage: com.xuzw.dao.entity
   mapperLocations: classpath:mapper/**/*.xml
+  #开启sql日志打印
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
 
 
