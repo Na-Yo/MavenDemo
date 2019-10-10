@@ -7,8 +7,10 @@ import com.xuzw.demo.dao.entity.BidCongerenceTopic;
 import com.xuzw.demo.dao.entity.IdeaResultModel;
 import com.xuzw.demo.dao.mapper.BidConferenceMapper;
 import com.xuzw.demo.dao.mapper.BidCongerenceIdeaMapper;
+import com.xuzw.demo.dao.mapper.BidCongerenceTopicMapper;
 import com.xuzw.demo.dao.mapper.ext.BidCongerenceTopicExtMapper;
 import com.xuzw.demo.service.AMixedMajoritarianStrategy;
+import com.xuzw.demo.service.OneTicketVetoStrategy;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,6 +25,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -40,6 +43,9 @@ public class StatisticalAnalysisService {
     private BidCongerenceIdeaMapper bidCongerenceIdeaMapper;
 
     @Autowired
+    private BidCongerenceTopicMapper bidCongerenceTopicMapper;
+
+    @Autowired
     private BidCongerenceTopicExtMapper bidCongerenceTopicExtMapper;
 
     private final String roleName="(主任)";
@@ -53,6 +59,7 @@ public class StatisticalAnalysisService {
     public List statisticalAnalysisService(@RequestParam("conferenceId")Long conferenceId){
         //会议主信息
         BidConference bidConference = bidConferenceMapper.selectByPrimaryKey(conferenceId);
+        String resolutionRule = bidConference.getResolutionRule();
         //参会人员
         String CongerenceConfereeString = getCongerenceConfereeString(conferenceId);
 
@@ -65,6 +72,12 @@ public class StatisticalAnalysisService {
 
         //查询所有议题的每个人的意见
         List<BidCongerenceIdeaModel> bidCongerenceIdeaList = bidCongerenceTopicExtMapper.statisticalAnalysis(conferenceId);
+        //获取每个议题统计结果
+        List<IdeaResultModel> ideaResultList = getIdeaResultList(resolutionRule, bidCongerenceIdeaList);
+        return bidCongerenceIdeaList;
+    }
+
+    private List<IdeaResultModel> getIdeaResultList(String resolutionRule, List<BidCongerenceIdeaModel> bidCongerenceIdeaList) {
         List<IdeaResultModel> ideaResultList = null;//
         //不为空才走
         if(bidCongerenceIdeaList != null && bidCongerenceIdeaList.size() > 0){
@@ -88,8 +101,11 @@ public class StatisticalAnalysisService {
                     ideaResultModel.setIdeaResultMap(ideaResultMap);
                     //策略执行
                     CalculatorStrategyContext calculatorStrategyContext = new CalculatorStrategyContext();
-                    calculatorStrategyContext.setCalculatorStrategy(new AMixedMajoritarianStrategy(ideaResultModel));//少数服从多数
-//                    calculatorStrategyContext.setCalculatorStrategy(new OneTicketVetoStrategy(ideaResultModel));//一票否决
+                    if("10".equals(resolutionRule)){//少数服从多数
+                        calculatorStrategyContext.setCalculatorStrategy(new AMixedMajoritarianStrategy(ideaResultModel));//少数服从多数
+                    }else{
+                        calculatorStrategyContext.setCalculatorStrategy(new OneTicketVetoStrategy(ideaResultModel));//一票否决
+                    }
                     //计算议题投票结果
                     calculatorStrategyContext.calculator();
                     ideaResultListTemp.add(ideaResultModel);
@@ -97,7 +113,7 @@ public class StatisticalAnalysisService {
                 ideaResultList=ideaResultListTemp;
             }
         }
-        return bidCongerenceIdeaList;
+        return ideaResultList;
     }
 
     /**
@@ -114,7 +130,7 @@ public class StatisticalAnalysisService {
         //参会人员 待查
         String CongerenceConfereeString = getCongerenceConfereeString(conferenceId);
 
-        //议题集合
+        //所有议题集合
         Map<String, List<BidCongerenceTopic>> congerenceTopicListMapByTopicType = null;
         //查询所有议题
         List<BidCongerenceTopic> bidCongerenceTopicList = bidCongerenceTopicExtMapper.queryBidCongerenceTopicByConferenceId(conferenceId);
@@ -185,6 +201,25 @@ public class StatisticalAnalysisService {
             bidCongerenceIdea.setUpdateTime(date);
             bidCongerenceIdeaMapper.updateByPrimaryKey(bidCongerenceIdea);
         });
+
+
+        //获取每个议题统计结果
+        BidConference bidConference = bidConferenceMapper.selectByPrimaryKey(conferenceId);
+        String resolutionRule = bidConference.getResolutionRule();
+        List<IdeaResultModel> ideaResultList = getIdeaResultList(resolutionRule, bidCongerenceIdeaList);
+        //拼装议题结果集合
+        List<BidCongerenceTopic> bidCongerenceTopicResultList = ideaResultList.stream().map(e -> {
+            BidCongerenceTopic bidCongerenceTopic = new BidCongerenceTopic();
+            bidCongerenceTopic.setId(e.getTopicId());
+            bidCongerenceTopic.setTopicCollect(e.getResult());
+            bidCongerenceTopic.setUpdateTime(date);
+            bidCongerenceTopic.setUpdateUserId(userId);
+            return bidCongerenceTopic;
+        }).collect(Collectors.toList());
+        //更新每个议题的决议结果
+        bidCongerenceTopicResultList.stream().forEach(e->{
+            bidCongerenceTopicMapper.updateByPrimaryKeySelective(e);
+        });
         return conferenceId;
     }
 
@@ -206,4 +241,43 @@ public class StatisticalAnalysisService {
         return bidConference;
     }
 
+
+    /**
+     * 校验是否可以将汇总记录推送
+     * @param request
+     * @return
+     */
+    @RequestMapping("/checkPushSummary")
+    public Object checkPushSummary(HttpServletRequest request){
+        Boolean checkFlag= true;
+        Long conferenceId = Long.valueOf(request.getParameter("conferenceId"));
+        //查询所有议题的每个人的意见
+        List<BidCongerenceIdeaModel> bidCongerenceIdeaList = bidCongerenceTopicExtMapper.statisticalAnalysis(conferenceId);
+        String noResponseCongerenceConferee = null;//未决议的人
+        if(bidCongerenceIdeaList != null) {
+            Set<String> collect = bidCongerenceIdeaList.stream().filter(e -> StringUtils.isEmpty(e.getTopicEvaluate())).map(e -> {
+                return e.getTrueName();
+            }).collect(Collectors.toSet());
+            if(collect !=null){
+                noResponseCongerenceConferee = collect.stream().collect(Collectors.joining(","));
+            }
+        }
+
+        //没有人未响应
+        if(StringUtils.isEmpty(noResponseCongerenceConferee)){
+            //查询所有议题
+            List<BidCongerenceTopic> bidCongerenceTopicList = bidCongerenceTopicExtMapper.queryBidCongerenceTopicByConferenceId(conferenceId);
+            String noResultCongerenceTopic = bidCongerenceTopicList.stream().filter(e -> {
+                return StringUtils.isEmpty(e.getTopicCollect());
+            }).map(e->{return e.getTopicName();}).collect(Collectors.joining(";"));
+            if(StringUtils.isNotEmpty(noResultCongerenceTopic)){
+                checkFlag = false;
+                return noResultCongerenceTopic;
+            }
+        }else{
+            checkFlag = false;
+            return noResponseCongerenceConferee;
+        }
+        return checkFlag;
+    }
 }
