@@ -2,6 +2,7 @@ package com.xuzw.demo.service.impl;
 
 import com.xuzw.demo.dao.entity.BidConference;
 import com.xuzw.demo.dao.entity.BidCongerenceConfereeModel;
+import com.xuzw.demo.dao.entity.BidCongerenceIdea;
 import com.xuzw.demo.dao.entity.BidCongerenceIdeaModel;
 import com.xuzw.demo.dao.entity.BidCongerenceTopic;
 import com.xuzw.demo.dao.entity.IdeaResultModel;
@@ -279,5 +280,40 @@ public class StatisticalAnalysisService {
             return noResponseCongerenceConferee;
         }
         return checkFlag;
+    }
+
+    @RequestMapping("/initBidCongerenceIdea")
+    public void initBidCongerenceIdea(@RequestParam("conferenceId") Long conferenceId) {
+        Date date = new Date();
+        Long userId=1L;
+        //查询所有议题
+        List<BidCongerenceTopic> bidCongerenceTopicList = bidCongerenceTopicExtMapper.queryBidCongerenceTopicByConferenceId(conferenceId);
+        //参会人员
+        List<BidCongerenceConfereeModel> bidCongerenceConfereeList = bidCongerenceTopicExtMapper.queryBidCongerenceConfereeList(conferenceId);
+
+        if(bidCongerenceTopicList != null){
+            List<BidCongerenceTopic> bidCongerenceTopic10List = bidCongerenceTopicList.stream().filter(e -> "10".equals(e.getTopicType())).collect(Collectors.toList());
+            if(bidCongerenceTopic10List != null && bidCongerenceConfereeList !=null){
+                List<BidCongerenceIdea> bidCongerenceIdeaList = new ArrayList<>(bidCongerenceTopic10List.size() * bidCongerenceConfereeList.size());
+                bidCongerenceTopic10List.forEach(e->{
+                    bidCongerenceConfereeList.forEach(b ->{
+                        BidCongerenceIdea bidCongerenceIdea = new BidCongerenceIdea();
+                        bidCongerenceIdea.setConferenceId(conferenceId);
+                        bidCongerenceIdea.setTopicId(e.getId());
+                        bidCongerenceIdea.setConfereeId(b.getId());
+                        bidCongerenceIdea.setIsDeleted("0");
+                        bidCongerenceIdea.setUserId(b.getLeaderUserId());
+                        bidCongerenceIdea.setCreateTime(date);
+                        bidCongerenceIdea.setCreateUserId(userId);
+                        bidCongerenceIdeaList.add(bidCongerenceIdea);
+                    });
+                });
+                if(bidCongerenceIdeaList != null){
+                    bidCongerenceIdeaList.forEach(e->{
+                        bidCongerenceIdeaMapper.insert(e);
+                    });
+                }
+            }
+        }
     }
 }
