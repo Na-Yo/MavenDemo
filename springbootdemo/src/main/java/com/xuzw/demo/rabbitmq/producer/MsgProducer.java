@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 import java.util.UUID;
 
 @Component
-public class MsgProducer implements RabbitTemplate.ConfirmCallback {
+public class MsgProducer {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -23,7 +23,6 @@ public class MsgProducer implements RabbitTemplate.ConfirmCallback {
     @Autowired
     public MsgProducer(RabbitTemplate rabbitTemplate) {
         this.rabbitTemplate = rabbitTemplate;
-        rabbitTemplate.setConfirmCallback(this); //rabbitTemplate如果为单例的话，那回调就是最后设置的内容
     }
 
     public void sendMsg(String content) {
@@ -31,16 +30,5 @@ public class MsgProducer implements RabbitTemplate.ConfirmCallback {
         //把消息放入ROUTINGKEY_A对应的队列当中去，对应的是队列A
         rabbitTemplate.convertAndSend(RabbitConfig.EXCHANGE_A, RabbitConfig.ROUTINGKEY_A, content, correlationId);
     }
-    /**
-     * 回调
-     */
-    @Override
-    public void confirm(CorrelationData correlationData, boolean ack, String cause) {
-        logger.info(Thread.currentThread()+"回调id:" + correlationData);
-        if (ack) {
-            logger.info(Thread.currentThread()+"消息成功消费");
-        } else {
-            logger.info(Thread.currentThread()+"消息消费失败:" + cause);
-        }
-    }
+
 }
