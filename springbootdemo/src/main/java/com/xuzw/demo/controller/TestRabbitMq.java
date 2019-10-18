@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/testRabbitMq")
 public class TestRabbitMq {
 
-    /*@Autowired
-    private MsgProducer msgProducer;*/
+    @Autowired
+    private MsgProducer msgProducer;
 
     @Autowired
     private PaymentNotifySender paymentNotifySender;
@@ -23,7 +23,7 @@ public class TestRabbitMq {
 
     @RequestMapping("/testMqContent")
     public String TestMq(@RequestParam("content") String content){
-//        msgProducer.sendMsgDirect(content);
+        msgProducer.sendMsg(content);
         paymentNotifySender.sender(content);
         apiReportSender.generateReports(content);
         return "ok";
