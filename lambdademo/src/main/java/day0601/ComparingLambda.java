@@ -25,6 +25,7 @@ public class ComparingLambda {
         })));*/
 
         userList.sort(Comparator.comparing(User::getDevStatus, Comparator.nullsLast(Comparator.naturalOrder())));
+//        userList.sort(Comparator.comparing(User::getDevStatus, Comparator.nullsLast(Comparator.naturalOrder())).thenComparing(User::getAge));
 
 //        userList.sort(Comparator.comparing(User::getDevStatus));
 
