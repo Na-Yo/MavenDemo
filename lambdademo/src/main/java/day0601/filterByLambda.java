@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 import static java.util.Arrays.asList;
 
-public class filterByLambda {
+public class FilterByLambda {
 
     public static void main(String[] args) {
         List<User> userList = asList(new User("张三", 10, "20"), new User("李四", 10, "10"), new User("王五", 13));
