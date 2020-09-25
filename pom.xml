@@ -8,6 +8,14 @@
     <artifactId>MavenDemo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>demo01</module>
+        <module>jxls2demo</module>
+        <module>lambdaDemo</module>
+        <module>resourcelocale</module>
+        <module>springbootdemo</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>
