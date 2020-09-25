@@ -15,6 +15,7 @@
         <module>lambdaDemo</module>
         <module>resourcelocale</module>
         <module>springbootdemo</module>
+        <module>spiredoc</module>
     </modules>
 
     <build>
