@@ -16,6 +16,7 @@
         <module>resourcelocale</module>
         <module>springbootdemo</module>
         <module>spiredoc</module>
+        <module>design_patterns</module>
     </modules>
 
     <build>
