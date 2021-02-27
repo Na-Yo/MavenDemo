@@ -31,4 +31,12 @@ public class Dog {
     public void setHeight(BigDecimal height) {
         this.height = height;
     }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", height=" + height +
+                '}';
+    }
 }
