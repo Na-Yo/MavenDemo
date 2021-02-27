@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class Sorter {
 
     /**
-     * 快速排序/选择排序
+     * 选择排序
      */
     public static void quickSort(Comparable[] comparables){
         System.out.println("origin:"+Arrays.asList(comparables));
@@ -31,7 +31,7 @@ public class Sorter {
     }
 
     /**
-     * 快速排序/选择排序
+     * 选择排序
      */
     public void quickSort(Cat[] cats){
         System.out.println("origin:"+Arrays.asList(cats));
