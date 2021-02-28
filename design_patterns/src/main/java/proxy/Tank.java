@@ -5,6 +5,7 @@ import java.util.Random;
 /**
  * @author xuziwen
  * @date 2021/2/28 10:10 下午
+ * 静态代理
  */
 public class Tank implements Movable {
 
