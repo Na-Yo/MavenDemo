@@ -6,15 +6,15 @@ package factory;
  * 工厂方法 产品维度扩展
  */
 public class SimpleVehicleFactory {
-    public static Moveable createCar(){
+    public static Movable createCar(){
         return new Car();
     }
 
-    public static Moveable createPlane(){
+    public static Movable createPlane(){
         return new Plane();
     }
 
-    public static Moveable createBroom(){
+    public static Movable createBroom(){
         return new Broom();
     }
 }

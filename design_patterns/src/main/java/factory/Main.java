@@ -11,11 +11,11 @@ package factory;
  */
 public class Main {
     public static void main(String[] args) {
-//        Moveable moveable = new Car();
-//        moveable.go();
-//        Moveable moveable = SimpleVehicleFactory.createBroom();
-//        moveable.go();
-        Moveable car = CarFactory.create();
+//        Movable movable = new Car();
+//        movable.go();
+//        Movable movable = SimpleVehicleFactory.createBroom();
+//        movable.go();
+        Movable car = CarFactory.create();
         car.go();
     }
 }
