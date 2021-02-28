@@ -3,7 +3,7 @@ package factory.abstractFactory;
 /**
  * @author xuziwen
  * @date 2021/2/28 3:23 下午
- * 抽象工厂，适合扩展产品簇，生产一系列产品，不适合扩展产品
+ * 抽象工厂，适合扩展产品族，生产一系列产品，不适合扩展产品
  */
 public abstract class AbstractFactory {
 
