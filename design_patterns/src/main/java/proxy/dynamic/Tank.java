@@ -1,5 +1,6 @@
 package proxy.dynamic;
 
+import net.sf.cglib.core.DebuggingClassWriter;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
@@ -61,6 +62,7 @@ public class Tank implements Movable {
     }
 
     public static void cglibDynamicProxy(){
+        System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "cglib");
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(Tank.class);
         enhancer.setCallback(new LogInterceptor());
