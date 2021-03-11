@@ -17,6 +17,7 @@
         <module>springbootdemo</module>
         <module>spiredoc</module>
         <module>design_patterns</module>
+        <module>springboot</module>
     </modules>
 
     <build>

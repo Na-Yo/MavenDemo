@@ -1,0 +1,15 @@
+server:
+  port: 8181
+
+spring:
+  application:
+    name: springboot
+  datasource:
+    url: jdbc:mysql://rm-bp1z0rul8kpok19evno.mysql.rds.aliyuncs.com:3306/shdq_dev?useUnicode=true&allowMultiQueries=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    #用户名
+    username: shdq
+    #密码
+    password: shdq@2021
+
+mybatis:
+  mapperLocations: classpath:mapper/**/*.xml
